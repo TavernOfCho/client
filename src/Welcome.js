@@ -43,9 +43,9 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>API</h3>
-                            <ButtonsGroup httpLink="http://localhost:8080" httpsLink="https://localhost:8443"/>
+                            <ButtonsGroup httpLink="http://localhost:8054" httpsLink="https://localhost:8055"/>
                             <h3>Cached API</h3>
-                            <ButtonsGroup httpLink="http://localhost:8081" httpsLink="https://localhost:8444"/>
+                            <ButtonsGroup httpLink="http://localhost:8056" httpsLink="https://localhost:8057"/>
                         </div>
                     </div>
                     <div className="other__bloc">
@@ -54,7 +54,30 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>Admin</h3>
-                            <ButtonsGroup httpLink="http://localhost:81" httpsLink="https://localhost:444"/>
+                            <ButtonsGroup httpLink="http://localhost:8052" httpsLink="https://localhost:8053"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="main__other">
+                    <h2>Available services (with domain name):</h2>
+                    <div className="other__bloc">
+                        <div className="other__circle">
+                            <Api />
+                        </div>
+                        <div className="other__content">
+                            <h3>API</h3>
+                            <ButtonsGroup httpLink="http://api.wow_symfony.develop" httpsLink="https://api.wow_symfony.develop"/>
+                            <h3>Cached API</h3>
+                            <ButtonsGroup httpLink="http://cached_api.wow_symfony.develop" httpsLink="https://cached_api.wow_symfony.develop"/>
+                        </div>
+                    </div>
+                    <div className="other__bloc">
+                        <div className="other__circle">
+                            <Admin />
+                        </div>
+                        <div className="other__content">
+                            <h3>Admin</h3>
+                            <ButtonsGroup httpLink="http://admin.wow_symfony.develop" httpsLink="https://admin.wow_symfony.develop"/>
                         </div>
                     </div>
                 </div>
