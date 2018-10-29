@@ -4,18 +4,10 @@ import './welcome.css';
 const Welcome = () => (
     <div className="welcome">
         <header className="welcome__top">
-          <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://api-platform.com"
-          >
+          <a target="_blank" rel="noopener noreferrer" href="https://api-platform.com">
             <Logo />
           </a>
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://les-tilleuls.coop"
-            >
+            <a target="_blank" rel="noopener noreferrer" href="https://les-tilleuls.coop">
                 <Flag />
             </a>
         </header>
@@ -51,15 +43,9 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>API</h3>
-                            <ButtonsGroup
-                                httpLink="http://localhost:8080"
-                                httpsLink="https://localhost:8443"
-                            />
+                            <ButtonsGroup httpLink="http://localhost:8080" httpsLink="https://localhost:8443"/>
                             <h3>Cached API</h3>
-                            <ButtonsGroup
-                                httpLink="http://localhost:8081"
-                                httpsLink="https://localhost:8444"
-                            />
+                            <ButtonsGroup httpLink="http://localhost:8081" httpsLink="https://localhost:8444"/>
                         </div>
                     </div>
                     <div className="other__bloc">
@@ -68,10 +54,7 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>Admin</h3>
-                            <ButtonsGroup
-                                httpLink="http://localhost:81"
-                                httpsLink="https://localhost:444"
-                            />
+                            <ButtonsGroup httpLink="http://localhost:81" httpsLink="https://localhost:444"/>
                         </div>
                     </div>
                 </div>
@@ -79,50 +62,22 @@ const Welcome = () => (
         </section>
         <div className="welcome__help">
             <h2>Need help?</h2>
-            <HelpButton
-                url="https://stackoverflow.com/questions/tagged/api-platform.com"
-                Image={Sto}
-                title="Ask your questions on Stack Overflow!"
-            />
-            <HelpButton
-                url="https://api-platform.com/support"
-                Image={Slack}
-                title="Chat with the community on Slack!"
-            />
+            <HelpButton url="https://stackoverflow.com/questions/tagged/api-platform.com" Image={Sto} title="Ask your questions on Stack Overflow!"/>
+            <HelpButton url="https://api-platform.com/support" Image={Slack} title="Chat with the community on Slack!"/>
         </div>
     </div>
 );
 
 const ButtonsGroup = ({ httpLink, httpsLink }) => (
     <div className="buttons__group">
-        <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={httpLink}
-            className="other__button"
-        >
-            http
-        </a>
+        <a target="_blank" rel="noopener noreferrer" href={httpLink} className="other__button">http</a>
         <div className="buttons__or" />
-        <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={httpsLink}
-            className="other__button"
-        >
-            https
-        </a>
+        <a target="_blank" rel="noopener noreferrer" href={httpsLink} className="other__button">https</a>
     </div>
 );
 
 const HelpButton = ({ Image, url, title }) => (
-    <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={url}
-        className="help__circle"
-        title={title}
-    >
+    <a target="_blank" rel="noopener noreferrer" href={url} className="help__circle" title={title}>
         <Image />
     </a>
 );
@@ -130,15 +85,8 @@ const HelpButton = ({ Image, url, title }) => (
 export default Welcome;
 
 const Logo = ({ className }) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={150}
-        height={150}
-        viewBox="0 0 300 300"
-    >
-        <style
-            type="text/css"
-            dangerouslySetInnerHTML={{
+    <svg xmlns="http://www.w3.org/2000/svg" width={150} height={150} viewBox="0 0 300 300">
+        <style type="text/css" dangerouslySetInnerHTML={{
                 __html:
                     '  \n\t.logost0{fill:#FFFFFF;}\n\t.logost1{fill:#AFE5E5;}\n\t.logost2{opacity:0.2;fill:#1D1E1C;}\n\t.logost3{fill:#1D1E1C;}\n\t.logost4{fill:#38A9B4;}\n'
             }}
@@ -292,16 +240,8 @@ const Logo = ({ className }) => (
 );
 
 const Flag = () => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={600}
-        height={30}
-        viewBox="0 0 830 42"
-        className="welcome__flag"
-    >
-        <style
-            type="text/css"
-            dangerouslySetInnerHTML={{
+    <svg xmlns="http://www.w3.org/2000/svg" width={600} height={30} viewBox="0 0 830 42" className="welcome__flag">
+        <style type="text/css" dangerouslySetInnerHTML={{
                 __html:
                     '  \n\t.flagst0{fill:#253032;}\n\t.flagst1{fill:#FFFFFF;}\n\t.flagst2{fill:#C34536;}\n'
             }}
@@ -423,15 +363,8 @@ const Flag = () => (
 );
 
 const SpiderWelcome = () => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="400"
-        height="400"
-        viewBox="0 0 300 300"
-    >
-        <style
-            type="text/css"
-            dangerouslySetInnerHTML={{
+    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 300 300" >
+        <style type="text/css" dangerouslySetInnerHTML={{
                 __html:
                     '  \n\t.spiderWelcome0{fill:#1D1E1C;}\n\t.spiderWelcome1{fill:#38A9B4;}\n\t.spiderWelcome2{fill:#FFFFFF;}\n\t.spiderWelcome3{opacity:0.12;fill:#020202;}\n'
             }}
