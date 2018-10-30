@@ -26,12 +26,7 @@ const Welcome = () => (
                         ({'http:' === document.location.protocol ? <a href="https://localhost">HTTPS</a> : <a href="http://localhost">HTTP</a>}).
                         Learn how to create your first API and generate a PWA:
                     </p>
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://api-platform.com/docs/"
-                        className="main__button"
-                    >
+                    <a target="_blank" rel="noopener noreferrer" href="https://api-platform.com/docs/" className="main__button">
                         Get started<Arrow />
                     </a>
                 </div>
@@ -43,9 +38,9 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>API</h3>
-                            <ButtonsGroup httpLink="http://localhost:8054" httpsLink="https://localhost:8055"/>
+                            <ButtonsGroup ipLink="http://localhost:8052" domainLink="http://api.wow_symfony.develop"/>
                             <h3>Cached API</h3>
-                            <ButtonsGroup httpLink="http://localhost:8056" httpsLink="https://localhost:8057"/>
+                            <ButtonsGroup ipLink="http://localhost:8053" domainLink="http://cached_api.wow_symfony.develop"/>
                         </div>
                     </div>
                     <div className="other__bloc">
@@ -54,30 +49,9 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>Admin</h3>
-                            <ButtonsGroup httpLink="http://localhost:8052" httpsLink="https://localhost:8053"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="main__other">
-                    <h2>Available services (with domain name):</h2>
-                    <div className="other__bloc">
-                        <div className="other__circle">
-                            <Api />
-                        </div>
-                        <div className="other__content">
-                            <h3>API</h3>
-                            <ButtonsGroup httpLink="http://api.wow_symfony.develop" httpsLink="https://api.wow_symfony.develop"/>
-                            <h3>Cached API</h3>
-                            <ButtonsGroup httpLink="http://cached_api.wow_symfony.develop" httpsLink="https://cached_api.wow_symfony.develop"/>
-                        </div>
-                    </div>
-                    <div className="other__bloc">
-                        <div className="other__circle">
-                            <Admin />
-                        </div>
-                        <div className="other__content">
-                            <h3>Admin</h3>
-                            <ButtonsGroup httpLink="http://admin.wow_symfony.develop" httpsLink="https://admin.wow_symfony.develop"/>
+                            <ButtonsGroup ipLink="http://localhost:8051" domainLink="http://admin.wow_symfony.develop"/>
+                            <h3>Website</h3>
+                            <ButtonsGroup ipLink="http://localhost:8054" domainLink="http://site.wow_symfony.develop"/>
                         </div>
                     </div>
                 </div>
@@ -91,11 +65,11 @@ const Welcome = () => (
     </div>
 );
 
-const ButtonsGroup = ({ httpLink, httpsLink }) => (
+const ButtonsGroup = ({ ipLink, domainLink }) => (
     <div className="buttons__group">
-        <a target="_blank" rel="noopener noreferrer" href={httpLink} className="other__button">http</a>
+        <a target="_blank" rel="noopener noreferrer" href={ipLink} className="other__button">ip</a>
         <div className="buttons__or" />
-        <a target="_blank" rel="noopener noreferrer" href={httpsLink} className="other__button">https</a>
+        <a target="_blank" rel="noopener noreferrer" href={domainLink} className="other__button">domain</a>
     </div>
 );
 
