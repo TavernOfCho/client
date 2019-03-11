@@ -38,9 +38,9 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>API</h3>
-                            <ButtonsGroup ipLink="http://localhost:8052" domainLink="http://api.wow_symfony.develop"/>
+                            <ButtonsGroup ipLink="https://localhost:8052" domainLink="https://api.wow_symfony.develop"/>
                             <h3>Cached API</h3>
-                            <ButtonsGroup ipLink="http://localhost:8053" domainLink="http://cached_api.wow_symfony.develop"/>
+                            <ButtonsGroup ipLink="https://localhost:8053" domainLink="https://cached_api.wow_symfony.develop"/>
                         </div>
                     </div>
                     <div className="other__bloc">
@@ -49,9 +49,9 @@ const Welcome = () => (
                         </div>
                         <div className="other__content">
                             <h3>Admin</h3>
-                            <ButtonsGroup ipLink="http://localhost:8051" domainLink="http://admin.wow_symfony.develop"/>
+                            <ButtonsGroup ipLink="https://localhost:8051" domainLink="https://admin.wow_symfony.develop"/>
                             <h3>Website</h3>
-                            <ButtonsGroup ipLink="http://localhost:8054" domainLink="http://site.wow_symfony.develop"/>
+                            <ButtonsGroup ipLink="https://localhost:8054" domainLink="https://site.wow_symfony.develop"/>
                         </div>
                     </div>
                 </div>
