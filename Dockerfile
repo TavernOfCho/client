@@ -1,4 +1,4 @@
-FROM node:10.9-alpine
+FROM node:11.5-alpine
 
 RUN mkdir -p /usr/src/client
 
@@ -8,7 +8,9 @@ RUN yarn global add @api-platform/client-generator
 
 # Prevent the reinstallation of node modules at every changes in the source code
 COPY package.json yarn.lock ./
-RUN yarn install
+
+RUN yarn global add react-router-redux react-scripts
+#RUN yarn install
 
 COPY . ./
 

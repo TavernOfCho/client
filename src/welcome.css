@@ -72,7 +72,7 @@ body {
 
 .welcome__main {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-        0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
     width: 80%;
     max-width: 1100px;
     margin-left: auto;
@@ -140,8 +140,8 @@ body {
 }
 
 .other__bloc h3:not(:first-child) {
-  margin-top: 15px;
-  padding-top: 5px;
+    margin-top: 15px;
+    padding-top: 5px;
 }
 
 .other__circle {
@@ -153,7 +153,7 @@ body {
 }
 
 .other__circle svg{
-  width: 110px;
+    width: 110px;
 }
 
 .buttons__group {
@@ -270,10 +270,10 @@ a.other__button {
 }
 
 .help__circle svg {
-  position:absolute;
-  left: 50%;
-  top: 50%;
-  transform:translate(-50%, -50%);
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
 }
 
 .help__circle:hover {
